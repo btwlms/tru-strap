@@ -1,0 +1,17 @@
+---
+classes:
+    - role::actcomp
+sensu_client::bt_name: "internal.bt.wlms_dev0.actcomp.1"
+sensu_client::bt_env: "internal.bt.wlms_dev0"
+sensu_client::bt_role: "actcomp"
+sensu_client::subscriptions:
+            - "default"
+            - "http"
+            - "https"
+sensu_client::rabbitmq_host: "10.21.1.107"
+sensu_client::rabbitmq_password: "secret"
+sensu_client::rabbitmq_user: "sensu"
+sensu_client::rabbitmq_port: "5672"
+sensu_client::rabbitmq_vhost: "/sensu"
+go::go_server_host: "10.21.1.148"
+go::go_server_port: "8153"
